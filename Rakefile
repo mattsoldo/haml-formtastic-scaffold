@@ -1,6 +1,6 @@
 require 'newgem'
 require File.dirname(__FILE__) + "/lib/haml_formtastic_scaffold/version"
-$hoe = Hoe.new("haml_formtastic_scaffold", HamlScaffold::Version::STRING) do |p|
+$hoe = Hoe.new("haml_formtastic_scaffold", HamlFormtasticScaffold::Version::STRING) do |p|
   p.rubyforge_name = "haml-scaffold"
   p.author = ['Matt Soldo']
   p.email = ['haml_scaffold@soldo.org']

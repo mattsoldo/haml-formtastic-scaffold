@@ -1,4 +1,4 @@
-class HamlScaffoldGenerator < Rails::Generator::NamedBase
+class HamlFormtasticScaffoldGenerator < Rails::Generator::NamedBase
   default_options :skip_timestamps => false, :skip_migration => false
 
   attr_reader   :controller_name,
