@@ -46,9 +46,9 @@ class HamlScaffoldGenerator < Rails::Generator::NamedBase
       m.directory(File.join('app/controllers', controller_class_path))
       m.directory(File.join('app/helpers', controller_class_path))
       m.directory(File.join('app/views', controller_class_path, controller_file_name))
-      m.directory(File.join('test/functional', controller_class_path))
-      m.directory(File.join('test/unit', class_path))
-      m.directory(File.join('test/unit/helpers', class_path))
+      # m.directory(File.join('test/functional', controller_class_path))
+      # m.directory(File.join('test/unit', class_path))
+      # m.directory(File.join('test/unit/helpers', class_path))
 
       for action in scaffold_views
         m.template("view_#{action}.html.haml.erb", File.join('app/views', controller_class_path, controller_file_name, "#{action}.html.haml"))
