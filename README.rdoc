@@ -1,4 +1,6 @@
-= Haml Scaffold
+= Haml Scaffold - Formtastic Fork
+
+This is fork of norman/haml-scaffold adds support for formtastic style forms.
 
 A collection of hacks to the Rails scaffold generator, to make it output
 templates using Haml rather than ERB. You may like some of it, and may hate
