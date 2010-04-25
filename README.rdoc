@@ -25,7 +25,6 @@ generator, with a few differences.
 
 * Tests error conditions, not just the "happy path."
 * Has 100% code coverage with RCov.
-* Uses very simple mocking with mocha to limit calls to the DB.
 
 === Views
 
@@ -57,14 +56,14 @@ The generated code will depend on:
 
 * haml[http://haml.hamptoncatlin.com/] (of course!)
 * will_paginate[http://github.com/mislav/will_paginate/]
-* mocha[http://mocha.rubyforge.org/]
+* formtastic[http://github.com/justinfrench/formtastic/]
 
 You'll need to add the gem dependencies to your config/environment.rb
 manually:
 
   config.gem "haml"
   config.gem "will_paginate"
-  config.gem "mocha"
+  config.gem "formtastic"
 
 Also, don't forget to Hamlize your Rails app:
 
@@ -78,7 +77,8 @@ Also, don't forget to Hamlize your Rails app:
 
 == Author
 
-{Norman Clarke}[mailto:norman@njclarke.com]
+{Matthew Soldo}[mailto:haml_scaffold@soldo.org]
 
-This work is derived from code in {Ruby on Rails}[http://rubyonrails.org/] and
-is released under its same license, the MIT License.
+This work is derived from code in {Ruby on Rails}[http://rubyonrails.org/] 
+and the haml_scaffold generator[http://github.com/norman/haml-scaffold/]. 
+It is released under its same license, the MIT License.
