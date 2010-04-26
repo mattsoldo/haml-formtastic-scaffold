@@ -3,5 +3,5 @@
 <% for attribute in attributes -%>
     = f.input :<%= attribute.name %>
 <% end -%>
-  - f.buttons
-    = form.commit_button 
+  - f.buttons do
+    = f.commit_button 
